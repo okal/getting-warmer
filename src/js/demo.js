@@ -1,3 +1,3 @@
 var gettingWarmer = require('./getting-warmer');
 
-window.GettingWarmer = gettingWarmer.GettingWarmer;
+gettingWarmer.GettingWarmer({"passwordInputSelector": "input[name=password]", "thumbnailContainerSelector": "#thumbnail-container" }).init()
