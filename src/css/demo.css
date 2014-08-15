@@ -41,6 +41,11 @@ input {
 	clear: both;
 }
 
-.clearfix {
-	clear: both;
+#credits {
+	margin-top: 20px;
+}
+
+#credits a {
+	text-decoration: none;
+	color: #777;
 }
