@@ -1,0 +1,45 @@
+body {
+	font-family: "Quattrocento Sans";
+	font-size: 1.2em;
+	color: #444;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#wrapper {
+	width: 80%;
+	margin: 0 auto;
+}
+
+form {
+	width: 25%;
+	display: block;
+	position: relative;
+}
+
+label {
+	display: block;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+input {
+	font-family: "Quattrocento Sans";
+	padding: 5px;
+	position: absolute;
+	right: 0;
+	border: 2px solid #777;
+	border-radius: 2px;
+}
+
+#thumbnail-container {
+	width: 64px;
+	height: 64px;
+	border: 2px solid #777;
+	border-radius: 2px;
+	margin: 2px;
+	position: absolute;
+	right: 0;
+}
