@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/okal/getting-warmer",
   "dependencies": {
-    "jssha": "^1.5.0"
+    "jssha": "^1.5.0",
+    "underscore": "^1.6.0"
   }
 }
