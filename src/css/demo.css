@@ -2,40 +2,45 @@ body {
 	font-family: "Quattrocento Sans";
 	font-size: 1.2em;
 	color: #444;
+	padding: 20px;
 }
 
 #wrapper {
+	position: relative;
 	width: 80%;
-	margin: 0 auto;
+	margin-left: 5%;
 }
 
 form {
-	width: 25%;
 	display: block;
 	position: relative;
 }
 
 label {
 	display: block;
-	position: relative;
 	margin-bottom: 10px;
 }
 
 input {
 	font-family: "Quattrocento Sans";
 	padding: 5px;
-	position: absolute;
-	right: 0;
 	border: 2px solid #777;
 	border-radius: 2px;
+	width: 246px;
+	clear: both;
 }
 
 #thumbnail-container {
+	min-width: 256px;
+	min-height: 256px;
 	width: 256px;
 	height: 256px;
-	margin: 2px;
-	position: absolute;
-	right: 0;
+	margin: 2px 0;
 	border: 2px solid #777;
 	border-radius: 2px;
+	clear: both;
+}
+
+.clearfix {
+	clear: both;
 }
