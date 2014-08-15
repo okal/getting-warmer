@@ -1,0 +1,25 @@
+{
+  "name": "getting-warmer",
+  "version": "0.0.1",
+  "description": "Visual cues for password inputs",
+  "main": "src/js/getting-warmer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/okal/getting-warmer.git"
+  },
+  "keywords": [
+    "generative",
+    "art",
+    "interaction",
+    "design"
+  ],
+  "author": "Okal Otieno <okal@justokal.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/okal/getting-warmer/issues"
+  },
+  "homepage": "https://github.com/okal/getting-warmer"
+}
