@@ -21,8 +21,8 @@ warmer.init();
 
 ## Credits
 
-jsSHA: https://github.com/Caligatio/jsSHA
-StackOverflow answer on colour generation from strings: http://stackoverflow.com/a/16348977/420386
+1. jsSHA: https://github.com/Caligatio/jsSHA
+2. StackOverflow answer on colour generation from strings: http://stackoverflow.com/a/16348977/420386
 
 ## License
 
