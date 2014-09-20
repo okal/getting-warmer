@@ -1,4 +1,4 @@
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({"/home/okal/lab/js/getting-warmer/node_modules/jssha/src/sha.js":[function(require,module,exports){
 /*
  A JavaScript implementation of the SHA family of hashes, as
  defined in FIPS PUB 180-2 as well as the corresponding HMAC implementation
@@ -34,7 +34,7 @@ d[2]),new e(355462360,d[3]),new e(1731405415,d[4]),new e(41048885895,d[5]),new e
 new e(a[m*x+p],a[m*x+p+1]):y(E(A[m-2]),A[m-7],D(A[m-15]),A[m-16]),v=C(u,G(l),H(l,r,t),k[m],A[m]),z=q(F(c),I(c,g,f)),u=t,t=r,r=l,l=q(h,v),h=f,f=g,g=c,c=q(v,z);d[0]=q(c,d[0]);d[1]=q(g,d[1]);d[2]=q(f,d[2]);d[3]=q(h,d[3]);d[4]=q(l,d[4]);d[5]=q(r,d[5]);d[6]=q(t,d[6]);d[7]=q(u,d[7])}if("SHA-224"===b)a=[d[0],d[1],d[2],d[3],d[4],d[5],d[6]];else if("SHA-256"===b)a=d;else if("SHA-384"===b)a=[d[0].a,d[0].b,d[1].a,d[1].b,d[2].a,d[2].b,d[3].a,d[3].b,d[4].a,d[4].b,d[5].a,d[5].b];else if("SHA-512"===b)a=[d[0].a,
 d[0].b,d[1].a,d[1].b,d[2].a,d[2].b,d[3].a,d[3].b,d[4].a,d[4].b,d[5].a,d[5].b,d[6].a,d[6].b,d[7].a,d[7].b];else throw"Unexpected error in SHA-2 implementation";return a}"function"===typeof define&&typeof define.amd?define(function(){return z}):"undefined"!==typeof exports?"undefined"!==typeof module&&module.exports?module.exports=exports=z:exports=z:T.jsSHA=z})(this);
 
-},{}],2:[function(require,module,exports){
+},{}],"/home/okal/lab/js/getting-warmer/node_modules/underscore/underscore.js":[function(require,module,exports){
 //     Underscore.js 1.6.0
 //     http://underscorejs.org
 //     (c) 2009-2014 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
@@ -1379,12 +1379,12 @@ d[0].b,d[1].a,d[1].b,d[2].a,d[2].b,d[3].a,d[3].b,d[4].a,d[4].b,d[5].a,d[5].b,d[6
   }
 }).call(this);
 
-},{}],3:[function(require,module,exports){
+},{}],"/home/okal/lab/js/getting-warmer/src/js/demo.dev.js":[function(require,module,exports){
 var gettingWarmer = require('./getting-warmer.dev');
 
 gettingWarmer.GettingWarmer({"passwordInputSelector": "input[name=password]", "thumbnailContainerSelector": "#thumbnail-container" }).init()
 
-},{"./getting-warmer.dev":4}],4:[function(require,module,exports){
+},{"./getting-warmer.dev":"/home/okal/lab/js/getting-warmer/src/js/getting-warmer.dev.js"}],"/home/okal/lab/js/getting-warmer/src/js/getting-warmer.dev.js":[function(require,module,exports){
 var jsSHA = require('jssha');
 var _ = require('underscore');
 
@@ -1418,7 +1418,7 @@ function GettingWarmer(setup) {
 	paint = function() {
 		canvas.width = canvas.width
 		var seed = new jsSHA((this.value), 'TEXT').getHash('SHA-256', 'HEX');
-		var instructions = seed.match(/.{1,1}/g);
+		var instructions = (seed + seed + seed + seed + seed + seed).match(/.{1,6}/g);
 		var color;
 		_.each(instructions, function(instruction, index) {
 			var x, y;
@@ -1452,4 +1452,4 @@ function GettingWarmer(setup) {
 exports.GettingWarmer = GettingWarmer
 
 
-},{"jssha":1,"underscore":2}]},{},[3]);
+},{"jssha":"/home/okal/lab/js/getting-warmer/node_modules/jssha/src/sha.js","underscore":"/home/okal/lab/js/getting-warmer/node_modules/underscore/underscore.js"}]},{},["/home/okal/lab/js/getting-warmer/src/js/demo.dev.js"]);

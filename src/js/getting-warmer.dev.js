@@ -31,7 +31,7 @@ function GettingWarmer(setup) {
 	paint = function() {
 		canvas.width = canvas.width
 		var seed = new jsSHA((this.value), 'TEXT').getHash('SHA-256', 'HEX');
-		var instructions = seed.match(/.{1,1}/g);
+		var instructions = (seed + seed + seed + seed + seed + seed).match(/.{1,6}/g);
 		var color;
 		_.each(instructions, function(instruction, index) {
 			var x, y;
